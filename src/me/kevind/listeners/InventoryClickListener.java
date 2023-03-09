@@ -30,6 +30,7 @@ public class InventoryClickListener implements Listener {
                 out.writeUTF("Connect");
                 if (e.getCurrentItem().isSimilar(ItemList.ACCEPT)) {
                     out.writeUTF(Objects.requireNonNull(IntegralPrompt.getInstance().getConfig().getString("server")));
+                    player.closeInventory();
                 }
                 if (e.getCurrentItem().isSimilar(ItemList.DENY)) {
                     player.kickPlayer(ColorUtils.color("&cYou must accept this warning in order to continue."));
