@@ -9,13 +9,16 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class IntegralPrompt extends JavaPlugin {
     private static InfoMenu infomenu;
+    private static IntegralPrompt instance;
+
     public static InfoMenu getInfomenu() {
         return infomenu;
     }
-    private static IntegralPrompt instance;
+
     public static IntegralPrompt getInstance() {
         return instance;
     }
+
     @Override
     public void onEnable() {
         instance = this;

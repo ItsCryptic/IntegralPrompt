@@ -10,12 +10,11 @@ import org.bukkit.entity.Player;
 public class PromptReloadCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String s, String[] args) {
-        if (sender instanceof Player) {
-            Player player = (Player) sender;
+        if (sender instanceof Player player) {
             if (player.hasPermission("integral.admin")) {
                 IntegralPrompt.getInstance().reloadConfig();
                 MessageUtils.sendMessage(player, "&aSuccessfully reloaded the config!");
-            }else {
+            } else {
                 MessageUtils.sendMessage(player, "&cYou do not have permission to use this command.");
             }
         }

@@ -5,16 +5,13 @@ import com.google.common.io.ByteStreams;
 import me.kevind.IntegralPrompt;
 import me.kevind.utils.ColorUtils;
 import me.kevind.utils.ItemList;
-import me.kevind.utils.MessageUtils;
 import net.md_5.bungee.api.chat.ClickEvent;
 import net.md_5.bungee.api.chat.TextComponent;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
-import org.w3c.dom.Text;
 
-import java.io.ByteArrayInputStream;
 import java.util.Objects;
 
 public class InventoryClickListener implements Listener {
