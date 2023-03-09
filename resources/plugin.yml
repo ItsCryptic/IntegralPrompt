@@ -1,0 +1,7 @@
+name: IntegralPrompt
+version: 1.0
+author: ItsCryptic
+api-version: 1.19
+main: me.kevind.IntegralPrompt
+commands:
+  promptreload:
